@@ -39,9 +39,9 @@
 
 ### Prerequisites
 
-- **Go 1.16+** installed on your system **for building**. Go is a cross-platform language that supports Windows, macOS, and various Linux distributions.
+- **Go 1.16+** installed on your system **for building**.
 
-  > **Note**: Go is only required for building the binary. The compiled Go binary is statically linked and requires **no Go runtime environment** to run.
+  > **Note**: Go is only required for building the binary. The compiled Go binary is statically linked and requires **no Go runtime environment** to run. Go is a cross-platform language that supports Windows, macOS, and various Linux distributions.
 
 - **OpenSSL** (optional, for generating certificates).
 
@@ -64,7 +64,7 @@ Alternatively, you can initialize Go modules and fetch dependencies explicitly:
 cd MicroMITMProxy
 
 # Initialize a new Go module (if not already done)
-go mod init github.com/yourusername/MicroMITMProxy
+go mod init github.com/webermania/MicroMITMProxy
 
 # Fetch all dependencies
 go mod tidy
