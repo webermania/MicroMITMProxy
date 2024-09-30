@@ -889,6 +889,7 @@ func getRandomPort(min, max int) (int, error) {
 
 func main() {
 	logInfo(fmt.Sprintf("Starting MicroMITMProxy version %v", version), "-main-")
+	logInfo("Project page: 'https://github.com/webermania/MicroMITMProxy'", "-main-")
 
 	// Define command-line flags
 	portFlag := flag.String("port", "", "Port for the server to listen on. If not specified, a random available port within the range will be used.")
