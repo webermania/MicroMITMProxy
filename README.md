@@ -107,7 +107,7 @@ openssl genrsa -out ca.key 2048
 
 # Generate a self-signed X.509 certificate valid for 1024 days
 openssl req -x509 -new -nodes -key ca.key -sha256 -days 1024 -out ca.crt \
-  -subj "/C=DE/ST=BY/L=Munich/O=MicroMITMProxy/OU=IT/CN=MicroMITMProxy-CA"
+  -subj "/O=MicroMITMProxy/CN=MicroMITMProxy-CA"
 ```
 
 **Explanation:**
