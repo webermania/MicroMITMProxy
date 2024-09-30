@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-**MicroMITMProxy** is a lightweight, Go-based TLS-capable proxy designed for intercepting HTTP and WebSocket traffic. Operating seamlessly as a sidecar in applications, it outputs all intercepted traffic in JSON format to `stdout`, including HTTP requests, responses, and WebSocket messages. With support for both HTTP and HTTPS, MicroMITMProxy performs man-in-the-middle (MITM) interception to decrypt and log secure traffic using a custom Certificate Authority (CA).
+**MicroMITMProxy** is a lightweight, Go-based TLS-capable MITM proxy designed for intercepting HTTP and WebSocket traffic. Operating seamlessly as a sidecar in applications, it outputs all intercepted traffic in JSON format to `stdout`, including HTTP requests, responses, and WebSocket messages. With support for both HTTP and HTTPS, MicroMITMProxy performs man-in-the-middle (MITM) interception to decrypt and log secure traffic using a custom Certificate Authority (CA).
 
 ## Features
 
@@ -41,8 +41,7 @@
 
 - **Go 1.16+** installed on your system **for building**.
 
-  > **Note**: Go is only required for building the binary. The compiled Go binary is statically linked and requires **no Go runtime environment** to run. Go is a cross-platform language that supports Windows, macOS, and various Linux distributions.
-
+  > **Note**: Go is only required for building the binary. The compiled Go binary is statically linked and requires **no Go runtime environment** to run.
 - **OpenSSL** (optional, for generating certificates).
 
 ### Building from Source
